@@ -38,4 +38,15 @@
   @include mdc-fab--exited_;
 }
 
-// postcss-bem-linter: end
+.mdc-fab--fling {
+  @include mdc-fab--fling_;
+
+  .mdc-fab--__action {
+    @include mdc-fab--mini_;
+    @include mdc-fab--fling__action_;
+  }
+}
+
+.mdc-fab--fling:hover {
+  @include mdc-fab--fling--expanded_;
+}
